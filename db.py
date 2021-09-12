@@ -5,7 +5,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from infons import *
 
 Base = declarative_base()
-engine = sq.create_engine(bd_path)
+engine = sq.create_engine(db)
 Session = sessionmaker(bind=engine)
 session = Session()
 
